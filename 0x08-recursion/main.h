@@ -9,68 +9,33 @@
 int _putchar(char c);
 
 /**
- * _puts_recursion - prints a string followed by new line
- * @s: string to be printed
+ * create_array - creates array of chars and initialize it with a specific char
+ * @size: array size
+ * @c: fill array values with this char
+ * Return: pointer to array
  */
 
-void _puts_recursion(char *s);
+char *create_array(unsigned int size, char c);
 
 /**
- * _print_rev_recursion - prints a string in reverse
- * @s: string to reverse
+ * _strdup - duplicates a string
+ * @str: duplicate this string
+ * Return: duplicated string
  */
 
-void _print_rev_recursion(char *s);
+char *_strdup(char *str);
 
 /**
- * _strlen_recursion - returns the length of a string
- * @s: string to evaluate
- *Return: length of the string
+ * str_concat - concatenates two strings
+ * @s1: string one to concatenate
+ * @s2: string two to concatenate
+ * Return: string one and two concatenated
  */
 
-int _strlen_recursions(char *s);
-
-/**
- * factorial - calculates factorial of a number
- * @n: number to calculate the factorial
- * Return: value of integer
- */
-
-int factorial(int n);
-
-/**
- * _pow_recursion - prints value f x raise to power of y
- * @x: value to multiply
- * @y: number of time to multiply the value
- * Return: value multiplied y times
- */
-
-int _pow_recursion(int x, int y);
-
-/**
- * _sqrt_recursion - find natural square root of n
- * @n: n
- * Return: natural square root, or -1 if not natural root
- */
-
-int _sqrt_recursion(int n);
-
-/**
- * is_prime_number - check if prime
- * @n: number to check
- * Return: 1 if prime, 0 if not
- */
-
-int is_prime_number(int n);
-
-/**
- * is_palindrome - check if palindrome
- * @s: string to check
- * Return: 1 if palindrome, 0 if not
- */
-
-int is_palindrome(char *s);
-
-int wildcmp(char *s1, char *s2);
+char *str_concat(char *s1, char *s2);
+int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
+char *argstostr(int ac, char **av);
+char **strtow(char *str);
 
 #endif
